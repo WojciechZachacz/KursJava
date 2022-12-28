@@ -9,6 +9,9 @@ public class Metody {
         metodOne();
         methodTwo();
         System.out.println(method1(24));
+
+        System.out.println(dodaj(20));
+        System.out.println(dodaj(20,20));
     }
     public static void metodOne(){
         System.out.println("jobany");
@@ -19,5 +22,13 @@ public class Metody {
     public static int method1(int liczba){
         liczba = liczba+1;
         return liczba;
+    }
+    public static int dodaj(int liczba){
+        liczba += 10;
+        return  liczba;
+    }
+    public static int dodaj(int liczba, int liczba2){
+        liczba += liczba2;
+        return  liczba;
     }
 }
