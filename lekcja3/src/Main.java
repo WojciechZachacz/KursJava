@@ -5,6 +5,9 @@
 //import p3.Building;
 //import p3.Warehause;
 //import p3.House;
+import  p4.Zwierzeta;
+import  p4.Pies;
+import  p4.Kot;
 public class Main {
     public static void main(String[] args) {
 
@@ -25,7 +28,25 @@ public class Main {
 //        System.out.println(domeczek.toString());
 //        System.out.println(dom.toString());
 //        System.out.println(tak.toString());
-        
+
+        Zwierzeta zwieze1 = new Zwierzeta("Kamil", 17);
+        zwieze1.idzDoPrzodu();
+        Zwierzeta zwieze2 = new Kot("Michal", 18);
+        zwieze2.idzDoPrzodu();
+        Zwierzeta zwieze3 = new Pies("Bartek", 18);
+        zwieze3.idzDoPrzodu();
+        Kot kot1 = new Kot("Ja", 18);
+        kot1.idzDoPrzodu();
+
+        Zwierzeta[] zwiezenta = new Zwierzeta[4];
+        zwiezenta[0] = zwieze1;
+        zwiezenta[1] = zwieze2;
+        zwiezenta[2] = zwieze3;
+        zwiezenta[3] = kot1;
+
+        for (Zwierzeta zw: zwiezenta) {
+            System.out.println(zw.getNazwa());
+        }
 
     }
 }
