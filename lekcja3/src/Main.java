@@ -8,10 +8,15 @@
 //import  p4.Zwierzeta;
 //import  p4.Pies;
 //import  p4.Kot;
-import p5.Samochod;
-import p5.Skoda;
-import p5.Audi;
-import p5.BMW;
+//import p5.Samochod;
+//import p5.Skoda;
+//import p5.Audi;
+//import p5.BMW;
+//import p6.Zwierze;
+//import p6.Kot;
+//import p6.Pies;
+import p7.Samochod;
+import p7.Traktor;
 public class Main {
     public static void main(String[] args) {
 
@@ -51,18 +56,35 @@ public class Main {
 //        for (Zwierzeta zw: zwiezenta) {
 //            System.out.println(zw.getNazwa());
 //        }
-        Samochod sk = new Skoda(240, 110);
-        Samochod au = new Audi(340, 410);
-        Samochod bm = new BMW(440, 1101);
+//        Samochod sk = new Skoda(240, 110);
+//        Samochod au = new Audi(340, 410);
+//        Samochod bm = new BMW(440, 1101);
+//
+//        Samochod[] jo = new Samochod[3];
+//        jo[0]=sk;
+//        jo[1]=au;
+//        jo[2]=bm;
+//
+//        for (Samochod tak :
+//                jo) {
+//            System.out.println(tak.toString());
+//        }
+//    Zwierze kot = new Kot("Puszek", 21);
+//    Zwierze pies = new Pies("Azor", 43);
+//
+//    Zwierze[] ta = new Zwierze[2];
+//    ta[0] = kot;
+//    ta[1] = pies;
+//        for (Zwierze tal :
+//                ta) {
+//            System.out.println(tal.getNazwa());
+//        }
+Samochod audi = new Samochod();
+audi.jedzDoPrzodu();
+audi.jedzDoTulu();
+Traktor ursus = new Traktor();
+ursus.jedzDoPrzodu();
+ursus.jedzDoTulu();
 
-        Samochod[] jo = new Samochod[3];
-        jo[0]=sk;
-        jo[1]=au;
-        jo[2]=bm;
-
-        for (Samochod tak :
-                jo) {
-            System.out.println(tak.toString());
-        }
     }
 }
