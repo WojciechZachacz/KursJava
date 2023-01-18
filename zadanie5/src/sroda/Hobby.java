@@ -65,6 +65,7 @@ public class Hobby extends JFrame implements ActionListener{
             panelPlec.add(opcja1);
             panelPlec.add(opcja2);
 
+
         }
 
         {
@@ -98,7 +99,37 @@ public class Hobby extends JFrame implements ActionListener{
         new Hobby();
     }
     @Override
-    public void actionPerformed(ActionEvent e) {
+    public void actionPerformed(ActionEvent actionEvent) {
+        Object o = actionEvent.getSource();
 
+        if (o == buton){
+            String Imie = Pimie.getText();
+            String Nazwisko = Pnazwisko.getText();
+            String Wiek = Pwiek.getText();
+
+            String P = "";
+            String F = "";
+
+            if (opcja1.isSelected()){
+                P = "Mężczyzna";
+            }
+            else if(opcja2.isSelected()) {
+                P = "Kobieta";
+            }
+
+            if (wybor1.isSelected()){
+                F += "Programowanie, ";
+            }
+            else if (wybor2.isSelected()){
+                F += "Samochody, ";
+            }
+            else if (wybor3.isSelected()){
+                F += "Narciarstwo, ";
+            }
+            else if (wybor4.isSelected()){
+                F += "Sport";
+            }
+            JOptionPane.showMessageDialog(this,"Imie: "+Imie+"\nNazwisko: "+Nazwisko+"\nWiek: "+Wiek+"\nPłeć: "+P+"\nZainteresowania: "+F);
+        }
     }
 }
