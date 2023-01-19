@@ -27,7 +27,7 @@ public class Klawisz extends JFrame implements AdjustmentListener {
             panel2.setBackground(Color.LIGHT_GRAY);
             panel.add(panel2);
 
-            przycisk = new JButton(x+", "+Math.abs(y-475));
+            przycisk = new JButton(x+", "+y);
             przycisk.setBounds(0,475,100,25);
             panel2.add(przycisk);
 //            przycisk.addActionListener(this);
@@ -56,7 +56,7 @@ public class Klawisz extends JFrame implements AdjustmentListener {
 
         y = sliderY.getValue();
         x = sliderX.getValue();
-        przycisk.setText(x+", "+Math.abs(y-475));
+        przycisk.setText(x+", "+y);
         przycisk.setBounds(x, y,100,25);
     }
 }
