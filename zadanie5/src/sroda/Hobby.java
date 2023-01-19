@@ -14,6 +14,8 @@ public class Hobby extends JFrame implements ActionListener{
     JCheckBox wybor1, wybor2, wybor3, wybor4;
     JButton buton;
 
+
+
     Hobby(){
         super("Hobby");
         setBounds(100,100,500,300);
@@ -64,6 +66,8 @@ public class Hobby extends JFrame implements ActionListener{
             opcja2.setBounds(25,55,100,25);
             panelPlec.add(opcja1);
             panelPlec.add(opcja2);
+            plec.add(opcja1);
+            plec.add(opcja2);
 
 
         }
